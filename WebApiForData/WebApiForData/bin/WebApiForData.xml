@@ -484,7 +484,7 @@
         <member name="T:WebApiForData.Controllers.KnifeController">
             <summary>
             刀具資料
-            </summary>
+            </summary>   
         </member>
         <member name="M:WebApiForData.Controllers.KnifeController.GetKnifeData">
             <summary>

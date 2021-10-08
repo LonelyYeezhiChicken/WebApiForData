@@ -4,19 +4,21 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using WebApiForData.Models;
 
 namespace WebApiForData.Controllers
 {
     /// <summary>
     /// 刀具資料
-    /// </summary>
+    /// </summary>   
     public class KnifeController : ApiController
     {
         /// <summary>
         /// 取得刀具資料
         /// </summary>
         /// <returns></returns>
+       [EnableCors(origins: "*", headers: "*", methods: "*")]
         public List<KnifeDatas> GetKnifeData()
         {
             List<KnifeDatas> _data = new List<KnifeDatas>();
